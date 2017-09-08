@@ -38,7 +38,7 @@ namespace Mailier.Core.Services
             ////创建客户端时，选择第一个节点作为请求主节点，该节点异常后会切换其它节点，待主节点恢复后会自动切换回来
             //var poolThird = new StickyConnectionPool(nodes);
 
-            var settings = new ConnectionSettings(pool).DefaultIndex(indexName);
+            var settings = new ConnectionSettings(pool).DefaultIndex(indexName).ThrowExceptions();
             return new ElasticClient(settings);
         }
     }

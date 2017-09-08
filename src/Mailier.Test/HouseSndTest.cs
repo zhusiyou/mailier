@@ -22,11 +22,14 @@ namespace Mailier.Test
             var dictionary = new Dictionary<string, string>
             {
                 { "BrokerID", "53455" },
-                { "GardenID", "1AE7343322F39630E053660310AC41DE,1AE7343322F69630E053660310AC41DE" }
+                { "GardenID", "1AE7343322F39630E053660310AC41DE,1AE7343322F69630E053660310AC41DE" },
+                { "GI", "1-1AE7343322F39630E053660310AC41DE" }
             };
 
-            var result = new HouseSndService().Query(dictionary, "inthouseno", "brokerId", "gardenId");
-            Assert.IsTrue(result.Any());
+            //var result = new HouseSndService().Query(dictionary, "inthouseno", "brokerId", "gardenId");
+            var result = new HouseSndService().QueryTest();
+            //var result = new HouseSndService().QueryUsageOne(dictionary);
+            Assert.IsTrue(result.All(m=>m.Brokers.Contains("53455")));
         }
     }
 }
