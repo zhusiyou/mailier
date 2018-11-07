@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mailier.Core", "Mailier.Core\Mailier.Core.csproj", "{27DDD6C6-A485-4603-BF5C-637AF1CD60E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mailier.Test", "Mailier.Test\Mailier.Test.csproj", "{7F689469-FD7A-4CC3-A267-125BB3FCEFFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern", "DesignPattern\DesignPattern.csproj", "{DC12F023-19E0-4199-8743-28BC4D3CCB28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7F689469-FD7A-4CC3-A267-125BB3FCEFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F689469-FD7A-4CC3-A267-125BB3FCEFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F689469-FD7A-4CC3-A267-125BB3FCEFFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC12F023-19E0-4199-8743-28BC4D3CCB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC12F023-19E0-4199-8743-28BC4D3CCB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC12F023-19E0-4199-8743-28BC4D3CCB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC12F023-19E0-4199-8743-28BC4D3CCB28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

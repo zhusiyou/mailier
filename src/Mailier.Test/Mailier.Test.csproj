@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DesignPatternTest.cs" />
     <Compile Include="HouseSndTest.cs" />
     <Compile Include="RedisTest.cs" />
     <Compile Include="UnitTest1.cs" />
@@ -59,6 +60,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DesignPattern\DesignPattern.csproj">
+      <Project>{dc12f023-19e0-4199-8743-28bc4d3ccb28}</Project>
+      <Name>DesignPattern</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Mailier.Core\Mailier.Core.csproj">
       <Project>{27ddd6c6-a485-4603-bf5c-637af1cd60e2}</Project>
       <Name>Mailier.Core</Name>

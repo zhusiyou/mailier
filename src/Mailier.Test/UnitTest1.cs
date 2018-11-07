@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Mailier.Core.Services;
 using System.Text.RegularExpressions;
+using StackExchange.Redis;
 
 namespace Mailier.Test
 {
@@ -22,6 +23,15 @@ namespace Mailier.Test
             var str = Regex.Replace(url, ":\\d+", "");
             //var str = url.Replace("(\\:\\d+)", "");
             Assert.IsTrue(str.Equals("http://app.xx.com/member/123"));
+        }
+
+        [TestMethod]
+        public void TestRedisKey() {
+            RedisKey key = "1";
+            RedisKey anotherKey = key.Append("2");
+            var t = anotherKey.Prepend("3");
+            Assert.IsTrue(anotherKey == "12");
+            Assert.IsTrue(t == "312");
         }
     }
 }
